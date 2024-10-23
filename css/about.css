@@ -1,0 +1,9 @@
+.card {
+    height: 100%; /* Đảm bảo thẻ card có chiều cao tối đa trong cột */
+    }
+    .card-body {
+        min-height: 220px; /* Điều chỉnh chiều cao của nội dung thẻ */
+    }
+    .col-md-4, .col-lg-2 {
+        max-width: 240px; /* Tăng chiều rộng của mỗi thẻ */
+    }
