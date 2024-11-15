@@ -1,0 +1,15 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height:100%;
+}
+
+
+.nav-sub-hov >a:hover{
+    background-color: #ccc;
+    color: black !important;
+}
+.card-img-top {
+    height: 200px; /* Đặt chiều cao cố định cho ảnh */
+    object-fit: cover; /* Cắt ảnh vừa với kích thước mà không làm biến dạng */
+    width: 100%; /* Đảm bảo ảnh chiếm hết chiều rộng của container */
+  }
