@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1>Group 2</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item nav-sub-hov">
+                        <a class="nav-link text-white" href="index.html" id="home-tab">Home</a>
+                    </li>
+                    <li class="nav-item nav-sub-hov">
+                        <a class="nav-link text-white" href="about.html" id="about-tab">About</a>
+                    </li>
+                    <li class="nav-item nav-sub-hov">
+                        <a class="nav-link text-white" href="groupDiary.html" id="diary-tab">Group Diary</a>
+                    </li>
+                    <li class="nav-item nav-sub-hov">
+                        <a class="nav-link text-white" href="project.html" id="project-tab">Project</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Sub-Menu -->
+    <nav class="bg-secondary py-2">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item nav-sub-hov">
+                    <a class="nav-link text-white" href="requirement.html">Requirement</a>
+                </li>
+                <li class="nav-item nav-sub-hov">
+                    <a class="nav-link text-white" href="design.html">Design</a>
+                </li>
+                <li class="nav-item nav-sub-hov">
+                    <a class="nav-link text-white active" href="implementation.html">Implementation</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Table for Functions and Responsible Persons -->
+    <div class="container my-2">
+       
+        <h1 style="text-align: center; margin-top: 0;">Implementation</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="project.html">Project</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Implementation</li>
+            </ol>
+        </nav>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Function</th>
+                    <th>Responsible Person</th>
+                    <th>View</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--1-->
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Group diary</td>
+                    <td>Trần Nhật Tân</td>
+                    <td>
+                        <button class="btn btn-primary view-btn" onclick="toggleContent(1)">View</button>
+                    </td>
+                </tr>
+
+                <tr id="content-1" class="additional-content">
+                    <td colspan="4">
+                        <iframe src="groupDiary.html" title="Group diary"></iframe> 
+                    </td>
+                </tr>
+                <!--End 1-->
+
+                <!--2-->
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Menu Project</td>
+                    <td>Lê Tuấn Phát</td>
+                    <td>
+                        <button class="btn btn-primary view-btn" onclick="toggleContent(2)">View</button>
+                    </td>
+                </tr>
+
+                <tr id="content-2" class="additional-content">
+                    <td colspan="4">
+                        <iframe src="project.html" title="Menu Project"></iframe>
+                    </td>
+                </tr>
+                <!--End 2-->
+
+                <!--3-->
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Login</td>
+                    <td>Nguyễn Phi</td>
+                    <td>
+                        <button class="btn btn-primary view-btn" onclick="toggleContent(3)">View</button>
+                    </td>
+                </tr>
+
+                <tr id="content-3" class="additional-content">
+                    <td colspan="4">
+                        <iframe src="https://letuanphat21.github.io/web_project/login.html" title="Login Form"></iframe>
+                    </td>
+                </tr>
+                <!--End 3-->
+
+                <!--4-->
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Forgot pass</td>
+                    <td>Huỳnh Hữu Thức</td>
+                    <td>
+                        <button class="btn btn-primary view-btn" onclick="toggleContent(4)">View</button>
+                    </td>
+                </tr>
+
+                <tr id="content-4" class="additional-content">
+                    <td colspan="4">
+                        <iframe src="https://letuanphat21.github.io/web_project/forgotpass.html" title="Forgot Form"></iframe>
+                    </td>
+                </tr>
+                <!--End 4-->
+                <!--5-->
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Register</td>
+                    <td>Ma Nguyễn Vũ</td>
+                    <td>
+                        <button class="btn btn-primary view-btn" onclick="toggleContent(5)">View</button>
+                    </td>
+                </tr>
+
+                <tr id="content-5" class="additional-content">
+                    <td colspan="4">
+                        <iframe src="https://letuanphat21.github.io/web_project/register.html" title="Register Form"></iframe>
+                    </td>
+                </tr>
+                <!--End 5-->
+
+                 <!--6-->
+                 <tr>
+                    <th scope="row">6</th>
+                    <td>Home Project</td>
+                    <td>Lê Tuấn Phát</td>
+                    <td>
+                        <button class="btn btn-primary view-btn" onclick="toggleContent(6)">View</button>
+                    </td>
+                </tr>
+
+                <tr id="content-6" class="additional-content">
+                    <td colspan="4">
+                        <iframe src="https://letuanphat21.github.io/web_project/" title="Login Form"></iframe>
+                    </td>
+                </tr>
+                <!--End 6-->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/implementtation.js"></script>
+</body>
+
+</html>

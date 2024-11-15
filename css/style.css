@@ -1,6 +1,5 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    height:100%;
 }
 
 
@@ -13,3 +12,30 @@ body{
     object-fit: cover; /* Cắt ảnh vừa với kích thước mà không làm biến dạng */
     width: 100%; /* Đảm bảo ảnh chiếm hết chiều rộng của container */
   }
+  .nav-link.active {
+    background-color: #ccc;  /* Màu khi active */
+    color: black !important;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .additional-content {
+    display: none;
+    background-color: #f8f9fa;
+    padding: 10px;
+    transition: height 0.3s ease;
+}
+
+iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
+}
+
+/* Class for expanded content */
+.expanded {
+    height: 450px;
+}
