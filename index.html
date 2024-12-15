@@ -8,68 +8,60 @@
   <!-- Link Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-</head>
-
 <body>
   <!-- Header -->
   <header class="bg-dark text-white py-3">
     <div class="container d-flex justify-content-between align-items-center">
       <h1>Group 2</h1>
-      <nav>
-        <ul class="nav">
-          <li class="nav-item nav-sub-hov">
-            <a class="nav-link text-white active" href="index.html" id="home-tab">Home</a>
-          </li>
-          <li class="nav-item nav-sub-hov">
-            <a class="nav-link text-white" href="about.html" id="about-tab">About</a>
-          </li>
-          <li class="nav-item nav-sub-hov">
-            <a class="nav-link text-white" href="groupDiary.html" id="diary-tab">Group Diary</a>
-          </li>
-          <li class="nav-item nav-sub-hov">
-            <a class="nav-link text-white" href="project.html" id="project-tab">Project</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="groupDiary.html">Group Diary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="project.html">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="styleguide.html">Style Guide</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="result.html">Result</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
 
-  <!-- Slider -->
-  <div id="carouselExampleIndicators" class="carousel slide text-center" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+ <!--Animation-->
+ <section class="py-5 text-center">
+  <div class="container">
+    <div id="group-animation" class="animation-box">
+      <h2 class="animate-text">Welcome to group 2</h2>
+      <h4 class="animate-text">Giáo viên hướng dẫn: Trần Thị Thanh Nga</h4>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/1.png" class="d-block w-100" alt="Slide 1">
-      </div>
-      <div class="carousel-item">
-        <img src="img/2.png" class="d-block w-100" alt="Slide 2">
-      </div>
-      <div class="carousel-item">
-        <img src="img/3.png" class="d-block w-100" alt="Slide 3">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
   </div>
-
+</section>
   <!-- Giới thiệu thành viên -->
   <section class="py-5">
     <div class="container">
       <h2 class="text-center mb-4">Các Thành viên nhóm</h2>
       <div class="row justify-content-center">
-        <div class="col-md-4 col-lg-2 mb-4">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
           <div class="card">
-            <img src="img/nhomtruong.jpg" class="card-img-top" alt="Member 1">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.asjGBPvHkv3RQ7ov5iL9XgHaHa&pid=Api&P=0&h=220" class="card-img-top" alt="Member 1">
             <div class="card-body text-center">
               <h5 class="card-title">Nhóm trưởng</h5>
               <p class="card-text">Lê Tuấn Phát</p>
@@ -77,9 +69,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-lg-2 mb-4">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
           <div class="card">
-            <img src="img/MaVu.jpg" class="card-img-top" alt="Member 2">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.Y40SnBFNx5BWc4PO27TjiAHaHa&pid=Api&P=0&h=220" class="card-img-top" alt="Member 2">
             <div class="card-body text-center">
               <h5 class="card-title">Thành viên </h5>
               <p class="card-text">Ma Nguyên Vũ</p>
@@ -87,9 +79,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-lg-2 mb-4">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
           <div class="card">
-            <img src="img/PhiNguyen.jpg" class="card-img-top" alt="Member 3">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.k30G8relcdi54bkxqQHp_wHaHL&pid=Api&P=0&h=220" class="card-img-top" alt="Member 3">
             <div class="card-body text-center">
               <h5 class="card-title">Thành viên</h5>
               <p class="card-text">Nguyễn Phi</p>
@@ -98,9 +90,9 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-lg-2 mb-4">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
           <div class="card">
-            <img src="img/Tan.jpg" class="card-img-top" alt="Member 4">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.03bCTBHSYv8J0mZ4O-XHGwHaI4&pid=Api&P=0&h=220" class="card-img-top" alt="Member 4">
             <div class="card-body text-center">
               <h5 class="card-title">Thành viên</h5>
               <p class="card-text">Trần Ngọc Tân</p>
@@ -109,9 +101,9 @@
           </div>
         </div>
 
-        <div class="col-md-4 col-lg-2 mb-4">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
           <div class="card">
-            <img src="img/Thuc.jpg" class="card-img-top" alt="Member 5">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.066koEMffOpXW6angkpk_gHaHa&pid=Api&P=0&h=220" class="card-img-top" alt="Member 5">
             <div class="card-body text-center">
               <h5 class="card-title">Thành viên</h5>
               <p class="card-text">Huỳnh Hữu Thức</p>
