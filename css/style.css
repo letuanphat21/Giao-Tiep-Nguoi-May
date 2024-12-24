@@ -1,0 +1,96 @@
+body{
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.nav-sub-hov >a:hover{
+  background-color: #ccc;
+  color: black !important;
+}
+.card-img-top {
+  height: 200px; /* Đặt chiều cao cố định cho ảnh */
+  object-fit: cover; /* Cắt ảnh vừa với kích thước mà không làm biến dạng */
+  width: 100%; /* Đảm bảo ảnh chiếm hết chiều rộng của container */
+}
+.nav-link.active {
+  background-color: #ccc;  /* Màu khi active */
+  color: black !important;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.additional-content {
+  display: none;
+  background-color: #f8f9fa;
+  padding: 10px;
+  transition: height 0.3s ease;
+}
+
+iframe {
+  width: 100%;
+  height: 700px;
+  border: none;
+}
+
+/* Class for expanded content */
+.expanded {
+  height: 450px;
+}
+/* Animation Keyframes */
+@keyframes fadeInUp {
+0% {
+  opacity: 0;
+  transform: translateY(20px);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+/* Styling Animation Section */
+.animation-box {
+margin-bottom: 2rem;
+padding: 2rem;
+border-radius: 10px;
+background: linear-gradient(135deg, #f9f9f9, #e0f7fa);
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.animate-text {
+font-weight: bold;
+color: #00695c; /* Màu xanh đậm nhưng dễ nhìn */
+opacity: 0;
+animation: fadeInUp 1.5s ease-in-out forwards;
+}
+
+.animate-text:nth-child(1) {
+animation-delay: 0.5s;
+}
+
+.animate-text:nth-child(2) {
+animation-delay: 1s;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+@media (max-width: 768px) {
+.card-img-top {
+  height: auto; /* Ảnh sẽ tự điều chỉnh chiều cao */
+}
+
+.nav-link {
+  font-size: 14px; /* Điều chỉnh kích thước chữ trên thiết bị nhỏ */
+}
+}
+
+@media (max-width: 576px) {
+.animation-box {
+  padding: 1rem; /* Thu nhỏ padding trên màn hình nhỏ */
+}
+}

@@ -1,0 +1,17 @@
+.card {
+  height: 100%; /* Đảm bảo thẻ card có chiều cao tối đa trong cột */
+  }
+  .card-body {
+      min-height: 220px; /* Điều chỉnh chiều cao của nội dung thẻ */
+  }
+  .col-md-4, .col-lg-2 {
+      max-width: 240px; /* Tăng chiều rộng của mỗi thẻ */
+  }
+  .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-10px); /* Dịch chuyển lên trên 10px */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+    }

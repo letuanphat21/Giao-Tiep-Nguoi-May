@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-dark text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1>Group 2</h1>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="groupDiary.html">Group Diary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="project.html">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="styleguide.html">Style Guide</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="result.html">Result</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Sub-Menu -->
+  <nav class="bg-secondary py-2">
+    <div class="container">
+      <ul class="nav justify-content-center">
+        <li class="nav-item nav-sub-hov">
+          <a class="nav-link text-white" href="requirement.html">Requirement</a>
+        </li>
+        <li class="nav-item nav-sub-hov">
+          <a class="nav-link text-white active" href="design.html">Design</a>
+        </li>
+        <li class="nav-item nav-sub-hov">
+          <a class="nav-link text-white" href="implementation.html">Implementation</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1 style="text-align: center;">Design</h1>
+
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="project.html">Project</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Design</li>
+      </ol>
+    </nav>
+    <table class="table table-bordered" >
+      <thead>
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Function</th>
+          <th scope="col">Designer</th>
+          <th scope="col">View</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" style="text-align: center;">1</th>
+          <td>Group diary</td>
+          <td>Trần Ngọc Tân</td>
+
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="function/week1/menuDiary/phacthao.jpg">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">2</th>
+          <td>Menu Project</td>
+          <td>Lê Tuấn Phát</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="function/week1/menuProject/anhthietke.jpg">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">3</th>
+          <td>Login</td>
+          <td>Nguyễn Phi</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="function/week1/login/banve.jpg">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">4</th>
+          <td>Forgot pass</td>
+          <td>Huỳnh Hữu Thức</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="function/week1/forgotpassword/1.png">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">5</th>
+          <td>Register</td>
+          <td>Ma Nguyên Vũ</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="function/week4/Registernew.jpg">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">6</th>
+          <td>Home Project</td>
+          <td>Lê Tuấn Phát</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="function/week1/homeproject/anhhome.jpg">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">7</th>
+          <td>Policy.html</td>
+          <td>Trần Ngọc Tân</td>
+
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">8</th>
+          <td>Frame admin</td>
+          <td>Lê Tuấn Phát</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="function/week2/banveadmin.jpg">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">9</th>
+          <td>About.html</td>
+          <td>Huỳnh Hữu Thức</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="function/week2/banveabout.jpg">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">10</th>
+          <td>Contact.html</td>
+          <td>Ma Nguyên Vũ</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="function/week2/contact.jpg">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">11</th>
+          <td>listbook.html</td>
+          <td>Huỳnh Hữu Thức</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">12</th>
+          <td>listcategory.html</td>
+          <td>Lê Tuấn Phát</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="function/week3/category.jpg">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">13</th>
+          <td>locationlibrary.html</td>
+          <td>Ma Nguyên Vũ</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="function/week3/location.jpg">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">14</th>
+          <td>category.html</td>
+          <td>Ma Nguyên Vũ</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">15</th>
+          <td>bookborrowed.html</td>
+          <td>Nguyễn Phi</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">16</th>
+          <td>bookreturned.html</td>
+          <td>Trần Ngọc Tân</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">17</th>
+          <td>blog</td>
+          <td>Lê Tuấn Phát</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="function/week4/blog.jpg">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">18</th>
+          <td>Feedback </td>
+          <td>Ma Nguyên Vũ</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="function/week5/feedback.jpg">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">19</th>
+          <td>list account </td>
+          <td>Phi Nguyễn</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">20</th>
+          <td>Style guide color </td>
+          <td>Lê Tuấn Phát</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">21</th>
+          <td>Style guide layout </td>
+          <td>Ma Nguyên Vũ</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">22</th>
+          <td>Style guide typography </td>
+          <td>Ma Nguyên Vũ</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">23</th>
+          <td>Style guide direction </td>
+          <td>Nguyễn Phi</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="">View</button></td>
+        </tr>
+        <tr>
+          <th scope="row" style="text-align: center;">24</th>
+          <td>Style guide image </td>
+          <td>Nguyễn Phi</td>
+          <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#imageModal"
+              data-img-src="">View</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImage" src="" class="img-fluid" alt="Preview Image">
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4" style="height: 100%;">
+  <p>&copy; 2024 Group 2. All Rights Reserved.</p>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/desgin.js"></script>
+</body>
+
+</html>
