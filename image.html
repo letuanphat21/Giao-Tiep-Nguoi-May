@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide - Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .image-section {
+            margin-top: 50px;
+        }
+
+        .image-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .image-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1>Group 2</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="groupDiary.html">Group Diary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="project.html">Project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="styleguide.html">Style Guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="result.html">Result</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- Sub-Menu -->
+    <nav class="bg-secondary py-2">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="styleguide.html">Typography</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Directory</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="layout.html">Layout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="color.html">Color</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white active" href="image.html">Image</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container image-section">
+        <h1 class="text-center">Image Gallery</h1>
+
+        <div class="mt-4">
+            <h2>Slider Image</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="img/1.png" alt="User" onclick="openImageModal(this.src)">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="img/2.png" alt="User" onclick="openImageModal(this.src)">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="img/3.png" alt="User" onclick="openImageModal(this.src)">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="GroupProject/images/bg.png" alt="User" onclick="openImageModal(this.src)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <h2>Avatar Image</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="img/MaVu.jpg" alt="User" onclick="openImageModal(this.src)">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="img/nhomtruong.jpg" alt="User" onclick="openImageModal(this.src)">
+                    </div>
+                </div><div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="img/PhiNguyen.jpg" alt="User" onclick="openImageModal(this.src)">
+                    </div>
+                </div><div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="img/Tan.jpg" alt="User" onclick="openImageModal(this.src)">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="img/Thuc.jpg" alt="User" onclick="openImageModal(this.src)">
+                    </div>
+                </div>
+                <div class="col-md-3"> 
+                    <div class="image-card text-center">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.asjGBPvHkv3RQ7ov5iL9XgHaHa&pid=Api&P=0&h=220" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                <div class="col-md-3"> 
+                    <div class="image-card text-center">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.Y40SnBFNx5BWc4PO27TjiAHaHa&pid=Api&P=0&h=220" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                <div class="col-md-3"> 
+                    <div class="image-card text-center">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.k30G8relcdi54bkxqQHp_wHaHL&pid=Api&P=0&h=220" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                <div class="col-md-3"> 
+                    <div class="image-card text-center">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.03bCTBHSYv8J0mZ4O-XHGwHaI4&pid=Api&P=0&h=220" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                <div class="col-md-3"> 
+                    <div class="image-card text-center">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.066koEMffOpXW6angkpk_gHaHa&pid=Api&P=0&h=220" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <div class="mt-4">
+            <h2>Design Image</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="function/week1/menuDiary/phacthao.jpg" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="function/week1/menuProject/anhthietke.jpg" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="function/week1/login/banve.jpg" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="function/week1/forgotpassword/1.png" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="function/week4/Registernew.jpg" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="function/week1/homeproject/anhhome.jpg" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="function/week2/banveadmin.jpg" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="function/week2/banveabout.jpg" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="function/week2/contact.jpg" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="function/week3/category.jpg" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="function/week3/location.jpg" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="function/week4/blog.jpg" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="image-card text-center">
+                        <img src="function/week5/feedback.jpg" alt="User" onclick="openImageModal(this.src)"> 
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="imageModal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="Phóng to ảnh" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openImageModal(src) {
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = src;
+            const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+            imageModal.show();
+        }
+    </script>
+</body>
+</html>
