@@ -1,3 +1,4 @@
+
 function validatePasswords() {
     const password = document.getElementById('new-password').value;
     const confirmPassword = document.getElementById('confirm-password').value;
@@ -6,4 +7,5 @@ function validatePasswords() {
         return false; // Prevent form submission
     }
     return true; // Allow form submission
+
 }
