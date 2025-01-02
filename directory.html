@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide - Directory</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    .directory-structure {
+    font-family: monospace;
+    white-space: pre;
+    margin: 0;
+    }
+</style>
+<body>
+
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1>Group 2</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="groupDiary.html">Group Diary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="project.html">Project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="styleguide.html">Style Guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="result.html">Result</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sub-Menu -->
+    <nav class="bg-secondary py-2">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="styleguide.html">Typography</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white active" href="directory.html">Directory</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="layout.html">Layout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="color.html">Color</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="image.html">Image</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container my-5">
+        <h2 class="mb-4">Project Directory Structure</h2>
+        
+        <div class="bg-light p-4 rounded">
+            <pre class="directory-structure">
+giao-tiep-nguoi-may/
+│
+├── css/                     # Directory containing CSS files
+│   ├── style.css            # Main CSS file
+│   └── theme.css            # Theme CSS file (if any)
+│
+├── js/                      # Directory containing JavaScript files
+│   └── app.js               # Main JS file
+│
+├── function/                # Directory containing reusable code or functions
+│   └── helpers.js           # Common utility functions
+│
+├── img/                     # Directory containing images
+│   ├── logo.png             # Main logo
+│   └── banner.jpg           # Banner image
+│
+├── groupProject/            # Directory containing group work or temporary files
+│   └── demo.html            # HTML demo file
+│
+├── index.html               # Main HTML file of the project
+├── about.html               # "About" information HTML file
+└── (x).html                 # Many other HTML file</pre>
+        </div>
+
+        <div class="mt-4">
+            <h3>Directory Structure Description:</h3>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>css/</strong> - Contains all project CSS files</li>
+                <li class="list-group-item"><strong>js/</strong> - Contains JavaScript files</li>
+                <li class="list-group-item"><strong>function/</strong> - Contains components and utility functions</li>
+                <li class="list-group-item"><strong>img/</strong> - Stores all project images</li>
+                <li class="list-group-item"><strong>groupProject/</strong> - Contains group work related files</li>
+                <li class="list-group-item"><strong>HTML files</strong> - Main website pages</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

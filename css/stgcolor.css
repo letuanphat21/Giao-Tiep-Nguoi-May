@@ -1,0 +1,13 @@
+.color-box {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bóng mờ nhẹ */
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Viền nhẹ */
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .color-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.2);
+  }
